@@ -29,7 +29,7 @@ spec:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       {{- if .Values.initContainer.enabled }}
       initContainers:
-        - name: parameters_pull
+        - name: parameters-pull
           image: 225989332181.dkr.ecr.us-east-1.amazonaws.com/parameters_pull
           imagePullPolicy: Always
           volumeMounts:
