@@ -12,7 +12,7 @@ spec:
     spec:
       serviceAccountName: {{ include "roboshop.serviceAccountName" . }}
       volumes:
-        - name: parameter-store
+        - name: parameters-store
           emptyDir:
             sizeLimit: 5Mi
       initContainers:
